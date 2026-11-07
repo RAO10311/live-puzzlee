@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Puzzle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>🧩 Live Puzzle</h1>
+        <p>Frame it. Capture it. Solve it.</p>
+    </header>
+
+    <main>
+        <section id="game">
+            <h2>Live Camera Preview</h2>
+
+            <video id="camera" autoplay playsinline></video>
+
+            <div>
+                <button id="startBtn">Start Camera</button>
+                <button id="captureBtn">Capture Photo</button>
+                <button id="stopBtn">Stop Camera</button>
+            </div>
+
+            <p id="status">Camera is not started.</p>
+
+            <h2>Captured Photo</h2>
+            <canvas id="photoCanvas"></canvas>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
